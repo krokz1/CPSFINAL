@@ -1,0 +1,49 @@
+.card-button {
+    position: relative;
+    padding-inline: 1.125rem;
+    padding-block: 1.125rem;
+    border: var(--border-card-button);
+    border-radius: 50%;
+
+    &:hover {
+        background-color: var(--background-color-header-decor-line);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &::after {
+        position: absolute;
+        top: 0.8125rem;
+        left: 1.125rem;
+        content: "";
+        width: 0.125rem;
+        height: 0.5rem;
+        background-color: var(--background-color-decor-button-accent);
+        transform: rotate(-45deg);
+        border-radius: 1px;
+    }
+
+    &::before {
+        position: absolute;
+        top: 1.0625rem;
+        left: 1.125rem;
+        content: "";
+        width: 0.125rem;
+        height: 0.5rem;
+        background-color: var(--background-color-decor-button-accent);
+        transform: rotate(227deg);
+        border-radius: 1px;
+    }
+}

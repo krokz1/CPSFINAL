@@ -1,0 +1,56 @@
+.button-servises {
+    display: flex;
+    margin-block-start: 0.125rem;
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-button);
+    border-radius: 50%;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transition: var(--transition);
+
+    &:hover {
+        background-color: var(--background-color-decor-button);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    }
+
+    &--call {
+        background-image: url('/block7/src/img/call.svg');
+    }
+
+    &--chat {
+        background-image: url('/block7/src/img/chat.svg');
+    }
+
+    &--profile {
+        background-image: url('/block7/src/img/profile.svg');
+    }
+
+    &--leave-request {
+        background-image: url('/block7/src/img/leaveRequest.svg');
+    }
+
+    &--repair-status {
+        background-image: url('/block7/src/img/repairStatus.svg');
+    }
+
+    &--search {
+        background-image: url('/block7/src/img/search.svg');
+    }
+}

@@ -1,0 +1,73 @@
+.repair {
+    display: flex;
+    position: relative;
+    padding-inline-start: 1.25rem;
+    column-gap: 1rem;
+
+    @include desktop {
+        position: absolute;
+        top: 2.375rem;
+        right: 1.875rem;
+        padding-inline-start: 0;
+        column-gap: 2.125rem;
+        z-index: 10;
+    }
+
+    &::after {
+        position: absolute;
+        top: 0.4375rem;
+        left: -0.125rem;
+        content: '';
+        height: 2rem;
+        width: 0.125rem;
+        background-color: var(--background-color-header-decor-line);
+        border-radius: 0.0625rem;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    &__item-text {
+        display: none;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: -0.0125rem;
+        text-align: right;
+        color: var(--color-text);
+
+        @include desktop {
+            display: block;
+        }
+    }
+
+    &__button {
+        margin-block-start: 0.25rem;
+
+        &:hover {
+            background-color: var(--background-color-decor-button);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}

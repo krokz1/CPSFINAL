@@ -1,0 +1,141 @@
+.modal {
+    display: flex;
+    min-width: 100dvw;
+    min-height: 100dvh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    border: none;
+
+    @include mobile-s {
+        max-width: 41.5dvw;
+    }
+
+    @include desktop {
+        min-width: 27.5rem;
+        max-width: 27.5rem;
+        margin-inline: auto 0;
+        align-items: flex-end;
+        border-left: var(--border-modal-left);
+        box-shadow: var(--box-shadow-modal);
+    }
+
+    &__button-close {
+        position: relative;
+        align-self: flex-start;
+    }
+
+    &__title {
+        position: relative;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: -0.0375rem;
+        color: var(--color-title);
+        text-align: left;
+    }
+
+    &__title::after {
+        position: absolute;
+        top: -0.5625rem;
+        left: -1rem;
+        content: '';
+        width: 0.25rem;
+        height: 2.5rem;
+        background-color: var(--background-color-decor-left-menu);
+        border-radius: 1px;
+    }
+
+    &__form {
+        display: flex;
+        margin-inline: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include desktop {
+            align-items: flex-end;
+        }
+    }
+
+    &-input {
+        padding: 0;
+        min-width: 18rem;
+        min-height: 3rem;
+        border: var(--border-modal-input);
+        border-radius: 0.5rem;
+
+        @include desktop {
+            min-width: 23.5rem;
+        }
+    }
+
+    &-input::placeholder {
+        padding-inline-start: 1rem;
+        padding-block-start: 0.75rem;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: -0.0125rem;
+        color: var(--color-text-accent);
+    }
+
+    &-input:last-child {
+        min-height: 7.375rem;
+        margin-block: 0;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        letter-spacing: 0px;
+        color: var(--color-text-accent);
+    }
+
+    &__link {
+        color: var(--color-link-modal);
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:focus {
+            outline: none;
+            color: var(--color-link-accent);
+        }
+
+        &:focus-visible {
+            color: var(--color-link-accent);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+    &__button {
+        padding-block: 0.25rem;
+        padding-inline: 0.5rem 2.375rem;
+        align-self: flex-end;
+
+        &:hover {
+            background-color: var(--background-color-decor-button);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        &:focus {
+            outline: none;
+            color: var(--color-link-accent);
+        }
+
+        &:focus-visible {
+            color: var(--color-link-accent);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}

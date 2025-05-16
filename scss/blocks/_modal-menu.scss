@@ -1,0 +1,83 @@
+.modal-menu--none {
+    display: none;
+
+    @include desktop {
+        display: flex;
+    }
+}
+
+.modal-menu--contents {
+    display: contents;
+
+    @include desktop {
+        display: flex;
+    }
+}
+
+.modal-menu {
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-inline: 1.5rem;
+    padding-block: 1.1875rem 2rem;
+    background-color: var(--background-color-accent);
+    transition-duration: 0.3ms;
+    z-index: 10;
+    height: 100dvh;
+
+    @include mobile-s {
+        max-width: 20rem;
+        box-shadow: 1rem 0px 3.25rem 0px #0E185033;
+    }
+
+    @include desktop {
+        padding-inline: 0 0.3125rem;
+        padding-block: 0;
+    }
+
+    &__header {
+        justify-content: stretch;
+
+    }
+
+    &__button-close.button-servises {
+        max-height: 2.5rem;
+        margin-inline-end: 1.0625rem;
+    }
+
+    &__button-search.button-servises {
+        max-height: 2.5rem;
+    }
+
+    &__navigation-list {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: 1.5rem;
+
+        @include desktop {
+            row-gap: 1.5938rem;
+        }
+    }
+
+    &__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        @include desktop {
+            margin-block-start: 0;
+        }
+    }
+
+    &__feedback {
+        margin-inline: 0;
+    }
+
+    &__company-contact {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
