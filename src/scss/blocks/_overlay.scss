@@ -1,0 +1,38 @@
+.overlay {
+    position: absolute;
+    content: '';
+    z-index: 10;
+    background: linear-gradient(270deg, var(--background-color) 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+
+    @include mobile-s {
+        display: none;
+    }
+
+    &__services {
+        top: 0.5rem;
+        right: -1rem;
+        min-height: 1.25rem;
+        min-width: 2.5rem;
+    }
+
+    &__refurbished-brands {
+        top: 0.5rem;
+        right: 0rem;
+        min-height: 5.0625rem;
+        min-width: 1.5rem;
+    }
+
+    &__equipment-repair {
+        top: 1rem;
+        right: 0rem;
+        min-height: 10rem;
+        min-width: 1.5rem;
+    }
+
+    &__price__swiper {
+        top: 0.8125rem;
+        right: 0rem;
+        min-height: 12.5rem;
+        min-width: 1.5rem;
+    }
+}

@@ -1,0 +1,18 @@
+.feedback {
+    display: flex;
+    padding-inline-end: 1.25rem;
+    column-gap: 1rem;
+
+    &--header {
+        display: none;
+        margin-inline: auto 0.125rem;
+
+        @include mobile-s {
+            display: flex;
+        }
+
+        @include desktop {
+            margin-inline: 0;
+        }
+    }
+}

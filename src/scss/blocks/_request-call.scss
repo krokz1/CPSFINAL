@@ -1,0 +1,50 @@
+.request-call {
+    display: none;
+    position: fixed;
+    top: 0;
+    padding-inline: 1rem 0;
+    z-index: 11;
+    min-height: 100%;
+
+    @include desktop {
+        padding: 0;
+    }
+
+    &__button-close.button-close.button-servises {
+        margin-block: 1.5rem 2.5625rem;
+
+        @include desktop {
+            position: absolute;
+            top: 0.5rem;
+            left: -4.5625rem;
+        }
+    }
+
+    &__title {
+        margin-block-end: 1.4275rem;
+
+        @include desktop {
+            margin-block: 2.5625rem 1.375rem;
+            padding-inline-start: 1.0625rem;
+            margin-inline: 0.9rem auto;
+        }
+
+    }
+
+    &__form {
+        margin-inline-end: 1rem;
+
+        @include desktop {
+            margin-inline-end: 2rem;
+        }
+    }
+
+    &__text {
+        margin-block: 1rem 1.125rem;
+
+        @include desktop {
+            padding-inline: 2rem;
+            margin-block-end: 1rem;
+        }
+    }
+}

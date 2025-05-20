@@ -1,0 +1,115 @@
+.services__title {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.4;
+    letter-spacing: -0.0375rem;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: -1rem;
+        content: '';
+        width: 0.25rem;
+        height: 2.5rem;
+        background-color: var(--background-color-decor-left-menu);
+        border-radius: 1px;
+
+        @include mobile-s {
+            left: -1.5rem;
+        }
+    }
+}
+
+.services__menu {
+    display: flex;
+    position: relative;
+    margin-block-start: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile-s {
+        margin-block-start: 2rem;
+    }
+
+    @include desktop {
+        margin-block-start: 0.625rem;
+    }
+
+    &-item:nth-of-type(1) {
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &-item:nth-of-type(2) {
+        display: none;
+
+        @include desktop {
+            display: block;
+        }
+    }
+
+    &-item:nth-of-type(5) {
+        display: none;
+
+        @include desktop {
+            display: block;
+        }
+    }
+
+    &-list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.625rem;
+        overflow-x: auto;
+        margin-block-end: 1.5rem;
+
+        @include mobile-s {
+            margin-block-end: 0rem;
+        }
+
+        @include desktop {
+            gap: 0.3125rem 1rem;
+            flex-wrap: wrap;
+        }
+    }
+
+    &-link {
+        padding-inline: 0.5625rem;
+        padding-block: 0.5rem;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: -0.0125rem;
+        color: var(--color-link);
+    }
+
+    &-link:hover {
+        color: var(--color-link-accent);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &-link:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    }
+
+    &-link:focus-visible {
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    }
+
+    &-link:active {
+        transform: scale(0.98);
+    }
+
+
+    &-link--activ {
+        margin-inline-start: 0.125rem;
+        padding-inline: 0.8125rem 1rem;
+        padding-block: 0.375rem;
+        border: var(--border-activ-link);
+        border-radius: 0.375rem;
+    }
+}

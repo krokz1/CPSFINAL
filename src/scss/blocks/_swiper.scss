@@ -1,0 +1,43 @@
+.swiper {
+  width: 100dvw;
+  min-height: auto;
+
+  @include mobile {
+    display: contents;
+  }
+
+  &-wrapper {
+    @include mobile-s {
+      width: auto;
+    }
+  }
+
+  &-slide {
+    @include mobile-s {
+      width: auto;
+    }
+  }
+
+  &-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &-pagination-bullet {
+    width: auto;
+    height: auto;
+    padding-inline: 0.375rem;
+    padding-block: 0.375rem;
+    background-color: var(--background-color-check-slider);
+    border-radius: 50%;
+  }
+
+  &-pagination-bullet-active {
+    background-color: var(--background-color-check-slider-activ);
+  }
+}
