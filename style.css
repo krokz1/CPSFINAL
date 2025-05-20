@@ -627,8 +627,8 @@ button {
       align-self: flex-start;
       -webkit-padding-start: 1.5rem;
               padding-inline-start: 1.5rem;
-      -webkit-margin-after: 12.9375rem;
-              margin-block-end: 12.9375rem; } }
+      -webkit-margin-after: auto;
+              margin-block-end: auto; } }
   @media (min-width: 1336px) {
     .header__navigation-list {
       display: flex;
