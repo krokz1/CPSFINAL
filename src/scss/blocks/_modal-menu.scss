@@ -50,6 +50,10 @@
         max-height: 2.5rem;
     }
 
+    &__navigation {
+        margin-block-end: auto;
+    }
+
     &__navigation-list {
         flex-direction: column;
         align-items: flex-start;

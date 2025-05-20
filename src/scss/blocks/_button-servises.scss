@@ -31,26 +31,26 @@
     }
 
     &--call {
-        background-image: url('./img/call.svg');
+        background-image: url('/src/img/call.svg');
     }
 
     &--chat {
-        background-image: url('./img/chat.svg');
+        background-image: url('/src/img/chat.svg');
     }
 
     &--profile {
-        background-image: url('./img/profile.svg');
+        background-image: url('/src/img/profile.svg');
     }
 
     &--leave-request {
-        background-image: url('./img/leaveRequest.svg');
+        background-image: url('/src/img/leaveRequest.svg');
     }
 
     &--repair-status {
-        background-image: url('./img/repairStatus.svg');
+        background-image: url('/src/img/repairStatus.svg');
     }
 
     &--search {
-        background-image: url('./img/search.svg');
+        background-image: url('/src/img/search.svg');
     }
 }

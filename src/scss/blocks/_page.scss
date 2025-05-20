@@ -2,7 +2,7 @@
     background-color: var(--background-color);
 
     @include desktop {
-        width: calc(100dvw - 320px);
+        width: 77.778dvw;
         grid-column: 2/3;
         grid-row: 1/3;
     }
