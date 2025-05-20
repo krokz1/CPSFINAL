@@ -2079,8 +2079,11 @@ button {
         -webkit-margin-before: 0;
                 margin-block-start: 0; } }
   .modal-menu__feedback {
-    margin-inline: 0;
-    display: flex !important; }
+    margin-inline: 0; }
+  .modal-menu__feedback.modal-menu--none {
+    @media (min-width: 560px) and (max-width: 1335px) {
+        display: flex !important;
+    }}
   .modal-menu__company-contact {
     flex-direction: column;
     align-items: flex-start;
