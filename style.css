@@ -849,17 +849,17 @@ button {
   .button-servises:focus-visible {
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); }
   .button-servises--call {
-    background-image: url("/src/img/call.svg"); }
+    background-image: url("/img/call.svg"); }
   .button-servises--chat {
-    background-image: url("/src/img/chat.svg"); }
+    background-image: url("/img/chat.svg"); }
   .button-servises--profile {
-    background-image: url("/src/img/profile.svg"); }
+    background-image: url("/img/profile.svg"); }
   .button-servises--leave-request {
-    background-image: url("/src/img/leaveRequest.svg"); }
+    background-image: url("/img/leaveRequest.svg"); }
   .button-servises--repair-status {
-    background-image: url("/src/img/repairStatus.svg"); }
+    background-image: url("/img/repairStatus.svg"); }
   .button-servises--search {
-    background-image: url("/src/img/search.svg"); }
+    background-image: url("/img/search.svg"); }
 
 .feedback {
   display: flex;
